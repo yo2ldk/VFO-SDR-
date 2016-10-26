@@ -20,7 +20,7 @@ void setup()
 
 void loop(){
   if(!digitalRead(VFO_UP) ==HIGH) {
-     TrinketHidCombo.pressKey(0x01,0x51);
+     TrinketHidCombo.pressKey(0x01,0xXX);
      TrinketHidCombo.pressKey(0,0);
     delay(10); 
     }else{
@@ -28,7 +28,7 @@ void loop(){
     
    
   if(!digitalRead(VFO_DOWN) ==HIGH) {
-      TrinketHidCombo.pressKey(0x01,0x52);
+      TrinketHidCombo.pressKey(0x01,0xXX);
       TrinketHidCombo.pressKey(0,0);
      delay(10);
     // }else{
