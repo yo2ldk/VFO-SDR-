@@ -20,26 +20,10 @@ void setup()
 
 void loop(){
   if(!digitalRead(VFO_UP) ==HIGH) {
-     TrinketHidCombo.pressKey(0x01,0xXX);
+     TrinketHidCombo.pressKey(0.0);
      TrinketHidCombo.pressKey(0,0);
     delay(10); 
     }else{
    }
     
-   
-  if(!digitalRead(VFO_DOWN) ==HIGH) {
-      TrinketHidCombo.pressKey(0x01,0xXX);
-      TrinketHidCombo.pressKey(0,0);
-     delay(10);
-    // }else{
-   //}
-   
- // if(!digitalRead(MODE) ==HIGH) {
-     // TrinketHidCombo.pressKey(0x01,0x19);
-     // TrinketHidCombo.pressKey(0,0);
-     // delay(10);
-    
-   }
-    
-    TrinketHidCombo.poll(); 
-}
+  
